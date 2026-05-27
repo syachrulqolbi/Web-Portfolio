@@ -2,8 +2,10 @@ FROM node:20-alpine AS build
 
 WORKDIR /app
 
+RUN npm install -g npm@11.15.0 && npm config set update-notifier false
+
 COPY package*.json ./
-RUN npm ci
+RUN npm ci --no-audit --no-fund
 
 COPY . .
 
