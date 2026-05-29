@@ -1,0 +1,36 @@
+﻿# Dependencies
+node_modules/
+*/node_modules/
+__pycache__/
+*.pyc
+
+# Build outputs
+build/
+dist/
+coverage/
+
+# Environment / secrets
+.env
+.env.*
+!*.env.example
+env.yaml
+*/env.yaml
+backend/env.yaml
+backend/gcp-key.json
+chatbot-service/env.yaml
+*.pem
+*.key
+*.json.key
+
+# Generated vector index
+chatbot-service/chatbot-portfolio-index/
+chatbot-portfolio-index/
+
+# Local notes
+Command.txt
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

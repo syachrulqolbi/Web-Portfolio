@@ -1,0 +1,9 @@
+node_modules
+.env
+.env.*
+env.yaml
+gcp-key.json
+npm-debug.log*
+.git
+.gitignore
+README.md
